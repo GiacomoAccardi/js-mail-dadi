@@ -38,10 +38,12 @@ button.addEventListener('click', function(){
         
         if (registered_users[i] === user_mail){
             message = 'Bentornato, stai per entrare nel sito..';
-            console.log(message)
+            console.log(message);
+            break;
         }   else {
             message = 'Forse hai sbagliato a scrivere? Non risulti registrato. Riprova!'
             console.log(message)
+            break;
         }
     }
 
