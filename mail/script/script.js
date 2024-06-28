@@ -32,14 +32,19 @@ button.addEventListener('click', function(){
     console.log(registered_users);
 
 // controllo che l'utente che tenta di accedere faccia parte della lista:
+    let message;
 
     for (let i=0; i < registered_users.length; i++){
         
         if (registered_users[i] === user_mail){
-            console.log('ENTRA!')
+            message = 'Bentornato, stai per entrare nel sito..';
+            console.log(message)
         }   else {
-            console.log('NON ENTRERAI MAI!')
+            message = 'Forse hai sbagliato a scrivere? Non risulti registrato. Riprova!'
+            console.log(message)
         }
     }
+
+    document.getElementById("target").innerText = message;
 
 })
