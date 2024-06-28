@@ -28,9 +28,18 @@ button.addEventListener('click', function(){
 
 //Creo una lista di utenti che possono accedere:
 
-    let registered_users = ['giacomino-js@gmail.com', 'fragolino-html@gmail.com', 'arraystudent@gmail.com', 'momemagnotutto@gmail.com', 'antonello@gmail.com']
+    let registered_users = ['giacomino-js@gmail.com', 'fragolino-html@gmail.com', 'arraystudent@gmail.com', 'momemagnotutto@gmail.com', 'antonello@gmail.com'];
     console.log(registered_users);
 
 // controllo che l'utente che tenta di accedere faccia parte della lista:
+
+    for (let i=0; i < registered_users.length; i++){
+        
+        if (registered_users[i] === user_mail){
+            console.log('ENTRA!')
+        }   else {
+            console.log('NON ENTRERAI MAI!')
+        }
+    }
 
 })
