@@ -23,6 +23,14 @@ const button = document.getElementById('send');
 
 button.addEventListener('click', function(){
     let user_mail = document.getElementById("user_mail").value;
+    console.log(user_mail);
 
-    console.log(user_mail)
+
+//Creo una lista di utenti che possono accedere:
+
+    let registered_users = ['giacomino-js@gmail.com', 'fragolino-html@gmail.com', 'arraystudent@gmail.com', 'momemagnotutto@gmail.com', 'antonello@gmail.com']
+    console.log(registered_users);
+
+// controllo che l'utente che tenta di accedere faccia parte della lista:
+
 })
