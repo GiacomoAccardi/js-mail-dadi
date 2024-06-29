@@ -13,3 +13,13 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto.
 //recupero il bottone dal DOM
 const play = document.getElementById('play');
 
+play.addEventListener('click', function(){
+
+let giocatore = Math.round(Math.random()*5)+1;
+    console.log(giocatore)
+
+let avversario = Math.round(Math.random()*5)+1;
+    console.log(avversario)
+
+
+})
