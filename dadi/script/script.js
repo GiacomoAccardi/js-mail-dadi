@@ -21,5 +21,16 @@ let giocatore = Math.round(Math.random()*5)+1;
 let avversario = Math.round(Math.random()*5)+1;
     console.log(avversario)
 
+let risultato;
 
+if (giocatore > avversario){
+    risultato = 'Hai vinto!'
+} else if (giocatore < avversario){
+    risultato = 'Hai perso!'
+} else {
+    risultato = 'pareggio, rigiochiamo?'
+}
+
+console.log(risultato)
+document.getElementById('target').innerText ='hai tirato: ' + giocatore + ' ed io: ' + avversario + ' risultato: ' + risultato
 })
