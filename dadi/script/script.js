@@ -10,4 +10,6 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 ----------------------------------------------------------------------------------------------------------
 */
+//recupero il bottone dal DOM
+const play = document.getElementById('play');
 
