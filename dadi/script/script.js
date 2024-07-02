@@ -15,10 +15,10 @@ const play = document.getElementById('play');
 
 play.addEventListener('click', function(){
 
-let giocatore = Math.round(Math.random()*5)+1;
+let giocatore = Math.floor(Math.random()*6)+1;
     console.log(giocatore)
 
-let avversario = Math.round(Math.random()*5)+1;
+let avversario = Math.floor(Math.random()*6)+1;
     console.log(avversario)
 
 let risultato;
